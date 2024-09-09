@@ -8,4 +8,11 @@ public class StudentController : Controller
     {
         return View();
     }
+    [HttpPost]
+    public IActionResult Index(string FullName, string StudentID)
+    {
+        string strResult = "Hello" + FullName + " - " + StudentID;
+        ViewBag.Student = strResult;
+        return View();
+    }
 }
