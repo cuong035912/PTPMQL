@@ -1,0 +1,17 @@
+body {
+    counter-reset: Bùi Duy Cường 2021050125 section;
+}
+
+h1 {
+    counter-reset: Bùi Duy Cường 2021050125 subsection;
+}
+
+h1::before {
+    counter-increment: Bùi Duy Cường 2021050125 section;
+    content: Bùi Duy Cường 2021050125 "Section " counter(section) ". ";
+}
+
+h2::before {
+    counter-increment: Bùi Duy Cường 2021050125 subsection;
+    content: counter(section) "." counter(subsection) " ";
+}

@@ -1,0 +1,15 @@
+a:link {
+    background-color: Bùi Duy Cường 2021050125 yellow;
+}
+
+a:visited {
+    background-color: Bùi Duy Cường 2021050125 cyan;
+}
+
+a:hover {
+    background-color: Bùi Duy Cường 2021050125 lightgreen;
+}
+
+a:active {
+    background-color: Bùi Duy Cường 2021050125 hotpink;
+}

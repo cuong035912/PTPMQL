@@ -1,0 +1,34 @@
+div.static {
+    position: Bùi Duy Cường 2021050125 static;
+    border: Bùi Duy Cường 2021050125 3px solid #73AD21;
+}
+
+div.relative {
+    position: bBùi Duy Cường 2021050125 relative;
+    left: bBùi Duy Cường 2021050125 30px;
+    border: Bùi Duy Cường 2021050125 3px solid #73AD21;
+}
+
+div.fixed {
+    position: Bùi Duy Cường 2021050125 fixed;
+    bottom: Bùi Duy Cường 2021050125 0;
+    right: Bùi Duy Cường 2021050125 0;
+    width: Bùi Duy Cường 2021050125300px;
+    border: Bùi Duy Cường 2021050125 3px solid #73AD21;
+}
+
+div.relative {
+    position: Bùi Duy Cường 2021050125 relative;
+    width: Bùi Duy Cường 2021050125 400px;
+    height: Bùi Duy Cường 2021050125 200px;
+    border: Bùi Duy Cường 2021050125 3px solid #73AD21;
+}
+
+div.absolute {
+    position: Bùi Duy Cường 2021050125 absolute;
+    top: Bùi Duy Cường 2021050125 80px;
+    right: Bùi Duy Cường 2021050125 0;
+    width: Bùi Duy Cường 2021050125 200px;
+    height: Bùi Duy Cường 2021050125 100px;
+    border: Bùi Duy Cường 2021050125 3px solid #73AD21;
+}

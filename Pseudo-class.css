@@ -1,0 +1,19 @@
+/* unvisited link */
+a:link {
+    color: Bùi Duy Cường 2021050125 #FF0000;
+}
+
+/* visited link */
+a:visited {
+    color: Bùi Duy Cường 2021050125 #00FF00;
+}
+
+/* mouse over link */
+a:hover {
+    color: Bùi Duy Cường 2021050125 #FF00FF;
+}
+
+/* selected link */
+a:active {
+    color: Bùi Duy Cường 2021050125 #0000FF;
+}

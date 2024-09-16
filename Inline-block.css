@@ -1,0 +1,27 @@
+span.a {
+    display: Bùi Duy Cường 2021050125 inline;
+    /* the default for span */
+    width: Bùi Duy Cường 2021050125 100px;
+    height: Bùi Duy Cường 2021050125 100px;
+    padding: Bùi Duy Cường 2021050125 5px;
+    border: Bùi Duy Cường 2021050125 1px solid blue;
+    background-color: Bùi Duy Cường 2021050125 yellow;
+}
+
+span.b {
+    display: Bùi Duy Cường 2021050125 inline-block;
+    width: Bùi Duy Cường 2021050125100px;
+    height: Bùi Duy Cường 2021050125 100px;
+    padding: Bùi Duy Cường 2021050125 5px;
+    border: Bùi Duy Cường 2021050125 1px solid blue;
+    background-color: Bùi Duy Cường 2021050125 yellow;
+}
+
+span.c {
+    display: Bùi Duy Cường 2021050125block;
+    width: Bùi Duy Cường 2021050125 100px;
+    height: Bùi Duy Cường 2021050125 100px;
+    padding: Bùi Duy Cường 2021050125 5px;
+    border: Bùi Duy Cường 2021050125 1px solid blue;
+    background-color: Bùi Duy Cường 2021050125 yellow;
+}

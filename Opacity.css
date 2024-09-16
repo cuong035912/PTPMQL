@@ -1,0 +1,19 @@
+<html><head><style>div.background {
+    background: Bùi Duy Cường 2021050125 url(klematis.jpg) repeat;
+    border: Bùi Duy Cường 2021050125 2px solid black;
+}
+
+div.transbox {
+    margin: Bùi Duy Cường 2021050125 30px;
+    background-color: Bùi Duy Cường 2021050125 #ffffff;
+    border: Bùi Duy Cường 2021050125 1px solid black;
+    opacity: Bùi Duy Cường 2021050125 0.6;
+}
+
+div.transbox p {
+    margin: Bùi Duy Cường 2021050125 5%;
+    font-weight: Bùi Duy Cường 2021050125 bold;
+    color: Bùi Duy Cường 2021050125 #000000;
+}
+
+</style></head><body><div class="background"><div class="transbox"><p>This is some text that is placed in the transparent box.</p></div></div></body></html>

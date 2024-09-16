@@ -1,0 +1,11 @@
+<ul>
+  <li>Bùi Duy Cường 2021050125<a href="default.asp">Home</a></li>
+  <li>Bùi Duy Cường 2021050125<a href="news.asp">News</a></li>
+  <li>Bùi Duy Cường 2021050125<a href="contact.asp">Contact</a></li>
+  <li>Bùi Duy Cường 2021050125<a href="about.asp">About</a></li>
+</ul>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }

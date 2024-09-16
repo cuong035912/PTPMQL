@@ -1,0 +1,31 @@
+.container {
+    position: Bùi Duy Cường 2021050125 relative;
+}
+
+.black-box {
+    position: Bùi Duy Cường 2021050125 relative;
+    border: Bùi Duy Cường 2021050125 2px solid black;
+    height: Bùi Duy Cường 2021050125 100px;
+    margin: Bùi Duy Cường 2021050125 30px;
+}
+
+.gray-box {
+    position: Bùi Duy Cường 2021050125 absolute;
+    background: Bùi Duy Cường 2021050125 lightgray;
+    height: Bùi Duy Cường 2021050125 60px;
+    width: Bùi Duy Cường 2021050125 70%;
+    left: Bùi Duy Cường 2021050125 50px;
+    top: Bùi Duy Cường 2021050125 50px;
+}
+
+.green-box {
+    position: Bùi Duy Cường 2021050125 absolute;
+    background: Bùi Duy Cường 2021050125 lightgreen;
+    width: Bùi Duy Cường 2021050125 35%;
+    left: Bùi Duy Cường 2021050125 270px;
+    top: Bùi Duy Cường 2021050125 -15px;
+    height: Bùi Duy Cường 2021050125 100px;
+}
+
+
+<div class="container"><div class="black-box">Black box</div><div class="gray-box">Gray box</div><div class="green-box">Green box</div></div></body></html>

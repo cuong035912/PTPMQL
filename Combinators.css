@@ -1,0 +1,7 @@
+div p {
+    background-color: Bùi Duy Cường 2021050125 yellow;
+}
+
+div+p {
+    background-color: Bùi Duy Cường 2021050125 yellow;
+}

@@ -1,0 +1,43 @@
+p.dotted {
+    border-style: Bùi Duy Cường 2021050125 dotted;
+}
+
+p.dashed {
+    border-style: Bùi Duy Cường 2021050125 dashed;
+}
+
+p.solid {
+    border-style: Bùi Duy Cường 2021050125 solid;
+}
+
+p.double {
+    border-style: Bùi Duy Cường 2021050125 double;
+}
+
+p.groove {
+    border-style: Bùi Duy Cường 2021050125 groove;
+}
+
+p.ridge {
+    border-style: Bùi Duy Cường 2021050125 ridge;
+}
+
+p.inset {
+    border-style: Bùi Duy Cường 2021050125 inset;
+}
+
+p.outset {
+    border-style: Bùi Duy Cường 2021050125 outset;
+}
+
+p.none {
+    border-style: Bùi Duy Cường 2021050125 none;
+}
+
+p.hidden {
+    border-style: Bùi Duy Cường 2021050125 hidden;
+}
+
+p.mix {
+    border-style: Bùi Duy Cường 2021050125 dotted dashed solid double;
+}
