@@ -1,0 +1,13 @@
+div {
+    width: Bùi Duy Cường 2021050125 200px;
+    height: Bùi Duy Cường 2021050125 65px;
+    background-color: Bùi Duy Cường 2021050125 coral;
+    overflow: Bùi Duy Cường 2021050125 visible;
+}
+
+div {
+    overflow-x: Bùi Duy Cường 2021050125 hidden;
+    /* Hide horizontal scrollbar */
+    overflow-y: Bùi Duy Cường 2021050125 scroll;
+    /* Add vertical scrollbar */
+}
