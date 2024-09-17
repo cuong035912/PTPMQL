@@ -22,7 +22,7 @@ public class HomeController : Controller
     public IActionResult Demo(string FullName)
     {
         string strResult = "Xin chào " + FullName;
-        ViewBag.Demo = strResuglt;
+        ViewBag.Demo = strResult;
         return View();
     }
     public IActionResult Privacy()
