@@ -15,5 +15,6 @@ namespace DemoMvc.Data
         }
 
         public DbSet<PTPMQL.Models.Employee> Employee { get; set; } = default!;
+        public DbSet<LopHoc> LopHoc { get; set;}
     }
 }
