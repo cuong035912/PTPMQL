@@ -6,26 +6,26 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using DemoMvc.Data;
-using DemoMvc.Models;
+using PTPMQL;
 
 namespace DemoMvc.Controllers
 {
-    public class PersonController : Controller
+    public class EmployeController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public PersonController(ApplicationDbContext context)
+        public EmployeController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // GET: Person
+        // GET: Employe
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Person.ToListAsync());
+            return View(await _context.Employe.ToListAsync());
         }
 
-        // GET: Person/Details/5
+        // GET: Employe/Details/5
         public async Task<IActionResult> Details(string id)
         {
             if (id == null)
@@ -33,39 +33,39 @@ namespace DemoMvc.Controllers
                 return NotFound();
             }
 
-            var person = await _context.Person
+            var employe = await _context.Employe
                 .FirstOrDefaultAsync(m => m.cancuoccongdan == id);
-            if (person == null)
+            if (employe == null)
             {
                 return NotFound();
             }
 
-            return View(person);
+            return View(employe);
         }
 
-        // GET: Person/Create
+        // GET: Employe/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Person/Create
+        // POST: Employe/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("cancuoccongdan,hoten,quequan")] Person person)
+        public async Task<IActionResult> Create([Bind("cancuoccongdan,hoten,quequan")] Employe employe)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(person);
+                _context.Add(employe);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(person);
+            return View(employe);
         }
 
-        // GET: Person/Edit/5
+        // GET: Employe/Edit/5
         public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
@@ -73,22 +73,22 @@ namespace DemoMvc.Controllers
                 return NotFound();
             }
 
-            var person = await _context.Person.FindAsync(id);
-            if (person == null)
+            var employe = await _context.Employe.FindAsync(id);
+            if (employe == null)
             {
                 return NotFound();
             }
-            return View(person);
+            return View(employe);
         }
 
-        // POST: Person/Edit/5
+        // POST: Employe/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("cancuoccongdan,hoten,quequan")] Person person)
+        public async Task<IActionResult> Edit(string id, [Bind("cancuoccongdan,hoten,quequan")] Employe employe)
         {
-            if (id != person.cancuoccongdan)
+            if (id != employe.cancuoccongdan)
             {
                 return NotFound();
             }
@@ -97,12 +97,12 @@ namespace DemoMvc.Controllers
             {
                 try
                 {
-                    _context.Update(person);
+                    _context.Update(employe);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!PersonExists(person.cancuoccongdan))
+                    if (!EmployeExists(employe.cancuoccongdan))
                     {
                         return NotFound();
                     }
@@ -113,10 +113,10 @@ namespace DemoMvc.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(person);
+            return View(employe);
         }
 
-        // GET: Person/Delete/5
+        // GET: Employe/Delete/5
         public async Task<IActionResult> Delete(string id)
         {
             if (id == null)
@@ -124,34 +124,34 @@ namespace DemoMvc.Controllers
                 return NotFound();
             }
 
-            var person = await _context.Person
+            var employe = await _context.Employe
                 .FirstOrDefaultAsync(m => m.cancuoccongdan == id);
-            if (person == null)
+            if (employe == null)
             {
                 return NotFound();
             }
 
-            return View(person);
+            return View(employe);
         }
 
-        // POST: Person/Delete/5
+        // POST: Employe/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(string id)
         {
-            var person = await _context.Person.FindAsync(id);
-            if (person != null)
+            var employe = await _context.Employe.FindAsync(id);
+            if (employe != null)
             {
-                _context.Person.Remove(person);
+                _context.Employe.Remove(employe);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool PersonExists(string id)
+        private bool EmployeExists(string id)
         {
-            return _context.Person.Any(e => e.cancuoccongdan == id);
+            return _context.Employe.Any(e => e.cancuoccongdan == id);
         }
     }
 }

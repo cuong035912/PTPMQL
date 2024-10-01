@@ -10,14 +10,41 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DemoMvc.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240924035607_Create_Table_LopHoc")]
-    partial class Create_Table_LopHoc
+    [Migration("20241001032454_Create_Table_Employe")]
+    partial class Create_Table_Employe
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.8");
+
+            modelBuilder.Entity("DemoMvc.Models.Person", b =>
+                {
+                    b.Property<string>("cancuoccongdan")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasMaxLength(8)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("hoten")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("quequan")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("cancuoccongdan");
+
+                    b.ToTable("Person");
+
+                    b.HasDiscriminator().HasValue("Person");
+
+                    b.UseTphMappingStrategy();
+                });
 
             modelBuilder.Entity("PTPMQL.Models.Employee", b =>
                 {
@@ -37,18 +64,11 @@ namespace DemoMvc.Migrations
                     b.ToTable("Employee");
                 });
 
-            modelBuilder.Entity("PTPMQL.Models.LopHoc", b =>
+            modelBuilder.Entity("PTPMQL.Employe", b =>
                 {
-                    b.Property<string>("TenLop")
-                        .HasColumnType("TEXT");
+                    b.HasBaseType("DemoMvc.Models.Person");
 
-                    b.Property<string>("MaLop")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("TenLop");
-
-                    b.ToTable("LopHoc");
+                    b.HasDiscriminator().HasValue("Employe");
                 });
 #pragma warning restore 612, 618
         }
